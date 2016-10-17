@@ -1,2 +1,2 @@
 # RHR-Patcher
-A multi-fileformat-patcher
+A multi-patcher
