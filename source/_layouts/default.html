@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+{% include base.html %}
+    <head>
+        {% include top.html %}
+    </head>
+    <body>
+        {% include header.html %}
+        <div class="wrapper">
+            <div class="tagline">
+                <p>{{ site.description }}</p>
+            </div>
+            {% include menubox.html %}
+            <div class="main">
+                <div class="alert alert-info">
+                    <strong>Information</strong><br />
+                    Die Website befindet sich im Moment noch in der Aufbau-Phase und ist deswegen möglicherweise nicht vollständig!<br />
+                    An ihrer Fertigstellung wird zur Zeit gearbeitet.
+                </div>
+                <article class="markdown-body">
+                    {{ content }}
+                    <div style="clear: both; "></div>
+                </article>
+            </div>
+            {% include footer.html %}
+        </div>
+        <footer class="wrapper credits">
+            <small>
+                This page generated using <a href="{{ site.github-pages }}">GitHub Pages</a><br />
+                Theme by <a href="{{ site.github-url }}{{ site.author.github }}">{{ site.author.name }}</a><br />
+                Last Build: {% include build-time.html %}
+            </small>
+        </footer>
+        {% include bottom.html %}
+    </body>
+</html>

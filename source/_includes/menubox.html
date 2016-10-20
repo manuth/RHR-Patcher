@@ -1,0 +1,23 @@
+<nav class="widebox nav mainnav nav_fill">
+    <div class="downloads">
+        <a href="{{ site.github-url }}{{ site.author.github }}/{{ site.project.github }}" target="_blank" class="code"><span>{{ site.project.name }} auf GitHub öffnen</span></a>
+        <a href="{{ site.github-url }}{{ site.author.github }}/{{ site.project.github }}/tarball/master" class="download-button tar"><span>Download</span></a>
+        <a href="{{ site.github-url }}{{ site.author.github }}/{{ site.project.github }}/zipball/master" class="download-button zip"><span>Download</span></a>
+    </div>
+    <ul>
+        <li>
+            <a href="{{ base }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
+        </li>
+        <li>
+            <a href="{{ base }}/downloads"{% if page.url == '/downloads' %} class="active"{% endif %}>Downloads</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="{{ base }}/docs"{% if page.url contains '/docs' %} class="active"{% endif %}>Dokumente</a>
+        </li>
+        <li>
+            <a href="{{ site.github-url }}{{ site.author.github }}/{{ site.project.github }}/wiki" target="_blank">Wiki</a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,10 @@
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 2%}
+{% if depth <= 0 %}
+    {% assign base = '.' %}
+{% else %}
+    {% assign base = '..' %}
+    {% for i in (2..depth) %}
+        {% assign base = base | append: '/..' %}
+    {% endfor %}
+{% endif %}

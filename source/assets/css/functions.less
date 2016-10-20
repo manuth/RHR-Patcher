@@ -1,0 +1,66 @@
+.animation(@params)
+{
+    -webkit-animation: @params;
+       -moz-animation: @params;
+         -o-animation: @params;
+            animation: @params;
+}
+
+.transition(@params)
+{
+    -webkit-transition: @params;
+       -moz-transition: @params;
+         -o-transition: @params;
+            transition: @params;
+}
+
+.transition-property(@params)
+{
+    -webkit-transition-property: @params;
+       -moz-transition-property: @params;
+         -o-transition-property: @params;
+            transition-property: @params;
+}
+
+.text-size-adjust(@params)
+{
+    -webkit-text-size-adjust: @params;
+       -moz-text-size-adjust: @params;
+        -ms-text-size-adjust: @params;
+            text-size-adjust: @params;
+}
+
+.font-feature-settings(@params)
+{
+    -webkit-font-feature-settings: @params;
+       -moz-font-feature-settings: @params;
+            font-feature-settings: @params;
+}
+
+
+.border-radius(@radius)
+{
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+        -ms-border-radius: @radius;
+         -o-border-radius: @radius;
+            border-radius: @radius;
+}
+
+.transform(@arguments)
+{
+    -webkit-transform: @arguments;
+       -moz-transform: @arguments;
+        -ms-transform: @arguments;
+         -o-transform: @arguments;
+            transform: @arguments;
+}
+
+.linear-gradient(@from, @to)
+{
+    background-image: -webkit-linear-gradient(top, @from 0, @to 100%);
+    background-image:      -o-linear-gradient(top, @from 0, @to 100%);
+    background-image:        -webkit-gradient(linear, left top, right bottom, from(@from), to(@to));
+    background-image:         linear-gradient(to bottom, @from 0, @to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@{from}', endColorstr='@{to}', GradientType=0);
+}

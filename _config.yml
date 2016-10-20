@@ -1,0 +1,73 @@
+# About this website
+title:          RHR-Patcher by ~Manuel Thalmann
+description:    Ein Multi-Format-Patcher
+
+author:
+    name:       Manuel Thalmann
+    email:      manu.th999@gmail.com
+    github:     manuth
+    avatar:     https://avatars0.githubusercontent.com/u/7085564
+
+project:
+    name:       RHR-Patcher
+    github:     RHR-Patcher
+
+# etc
+github-url:     https://github.com/
+github-pages:   https://pages.github.com/
+
+# Dependencies
+markdown:       kramdown
+highlighter:    rouge
+
+# Premalinks
+premalink:      pretty
+
+# Server
+source:         source
+destination:    site
+host:           0.0.0.0
+url:            http://localhost:4000/
+encoding:       UTF-8
+
+# Collections
+collection:
+    docs:
+        output: true
+    presentations:
+        output: true
+
+gems:
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - jemoji
+
+# Default Values
+defaults:
+    -
+        scope:
+            path: "" # an empty string here means all files in the project
+        values:
+            layout: default
+    -
+        scope:
+            type: docs
+        values:
+            layout: docs
+    -
+        scope:
+            type: presentations
+        values:
+            layout: presentations
+
+# Exclutions
+exclude:
+    - node_modules
+    - fonts
+    - grunt
+    - js
+    - less
+    - Gruntfile.js
+    - package.json
+    - '*.xcf'
