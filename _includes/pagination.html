@@ -1,0 +1,53 @@
+{% include base.html %}
+{% assign path = page.url | split: '/' %}
+{% for part in path %}
+  {% if part == "docs" %}
+    {% assign section_path = path[forloop.index] %}
+  {% endif %}
+{% endfor %}
+
+{% for section in site.data.docs %}
+  {% if section.path == section_path %}
+    {% assign section_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% assign section = site.data.docs | where: "path", section_name | first %}
+{% if section != nil %}
+  {% assign section_count = site.data.docs | size | minus: 1 %}
+  {% for doc_name in section.docs %}
+    {% assign doc_url = doc_name | prepend: '/' | prepend: section.path | prepend: '/docs/' | append: '.html' %}
+    {% if doc_url == page.url %}
+<nav aria-label="...">
+    <ul class="pager">
+        {% if forloop.first && section_index > 0 %}
+          {% assign prev_section_index = section_index | minus: 1 %}
+          {% assign prev_doc_index = site.data.docs[prev_section_index].docs | size | minus: 1 %}
+        {% else %}
+          {% assign prev_section_index = section_index %}
+          {% assign prev_doc_index = forloop.index0 | minus: 1 %}
+        {% endif %}
+        {% if prev_section_index >= 0 and prev_doc_index >= 0 %}
+          {% assign prev_doc_url = site.data.docs[prev_section_index].docs[prev_doc_index] | prepend: "/" | prepend: site.data.docs[prev_section_index].path | prepend: "/docs/" | append: ".html" %}
+          {% assign prev_doc = site.docs | where: "url", prev_doc_url | first %}
+        {% endif %}
+        <li class="previous{% if prev_doc == nil %} disabled{% endif %}"><a href="{% if prev_doc == nil %}#{% else %}{{ base }}{{ prev_doc.url }}{% endif %}"><span aria-hidden="true">&lArr;</span> Zurück{% if prev_doc != nil %} zu {% if prev_section_index != section_index %}"{{ site.data.docs[prev_section_index].title }}" > {% endif %}"{{ prev_doc.title }}"{% endif %}</a></li>
+        {% if forloop.last && section_index < section_count %}
+          {% assign next_section_index = section_index | plus: 1 %}
+          {% assign next_doc_index = 0 %}
+        {% else %}
+          {% assign next_section_index = section_index %}
+          {% assign next_doc_index = forloop.index0 | plus: 1 %}
+        {% endif %}
+
+        {% assign next_section_count = site.data.docs[next_section_index].docs | size | minus: 1 %}
+        {% if next_section_index <= section_count and next_doc_index <= next_section_count %}
+          {% assign next_doc_url = site.data.docs[next_section_index].docs[next_doc_index] | prepend: "/" | prepend: site.data.docs[next_section_index].path | prepend: "/docs/" | append: ".html" %}
+          {% assign next_doc = site.docs | where: "url", next_doc_url | first %}
+        {% endif %}
+        <li class="next{% if next_doc == nil %} disabled{% endif %}"><a href="{% if next_doc == nil %}#{% else %}{{ base }}{{ next_doc.url }}{% endif %}">Weiter{% if next_doc != nil %} zu {% if next_section_index != section_index %}"{{ site.data.docs[next_section_index].title }}" > {% endif %}"{{ next_doc.title }}"{% endif %} <span aria-hidden="true">&rArr;</span></a></li>
+    </ul>
+</nav>
+    {% endif %}
+  {% endfor %}
+{% endif %}

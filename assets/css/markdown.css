@@ -558,7 +558,6 @@ body .markdown-body table tr:nth-child(2n) {
 body .markdown-body img {
   max-width: 100%;
   box-sizing: content-box;
-  background-color: white;
   border-style: none;
 }
 body .markdown-body code {

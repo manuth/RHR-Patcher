@@ -6,9 +6,6 @@ body
     padding-top: @page-verticalpadding;
     padding-bottom: @page-verticalpadding;
     margin: 0;
-    font-family: @font;
-    line-height: @line-height;
-    color: @font-color;
     background: @background;
     background-size: cover;
     background-attachment: fixed;
@@ -39,11 +36,6 @@ a
             text-shadow: none;
         }
     }
-}
-
-small
-{
-    font-size: 10px;
 }
 
 .wrapper
@@ -128,9 +120,19 @@ small
 
     .main
     {
-        margin-top: 20px;
         padding-left: @main-verticalpadding;
         padding-right: @main-verticalpadding;
+
+        article
+        {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .widebox
+        {
+            margin: 0 -(@main-verticalpadding + @widebox-overflow-width) 20px;
+        }
     }
 
     .footer
@@ -227,7 +229,6 @@ small
     {
         width: auto;
         height: auto;
-        opacity: 0.8;
         .transition(ease-in-out 0.3s);
         .transition-property(~"opacity, text-shadow");
 
@@ -245,6 +246,7 @@ small
             float: right;
             border: 1px solid black;
             border-radius: 3px;
+            opacity: 0.8;
             display: inline-block;
             text-indent: 0;
             margin-left: 10px;
@@ -287,6 +289,21 @@ small
 {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.rhrpatcher-banner
+{
+    background: url(../images/Banner.BackgroundImage.png);
+    position: relative;
+    margin-right: -(@main-verticalpadding);
+    margin-bottom: 24px;
+    margin-left: -(@main-verticalpadding);
+    background-size: cover;
+
+    img
+    {
+        display: block;
+    }
 }
 
 /* Keyframes */

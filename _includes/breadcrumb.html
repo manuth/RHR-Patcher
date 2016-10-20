@@ -1,0 +1,23 @@
+{% include base.html %}
+{% assign path = page.url | remove_first: '/' | split: '/' %}
+{% if path[0] == "docs" %}  
+  {% assign section_name = path[1] %}
+{% endif %}
+{% assign section = site.data.docs | where: "path", section_name | first %}
+{% if section != nil %}
+<ol class="breadcrumb">
+    <li><a href="{{ base }}/docs/">Dokumente</a></li>
+  {% if path[2] == "index.html" %}
+    <li class="active">{{ section.title }}</li>
+  {% else %}
+    {% assign section_url = "/docs/" | append: section.path | append: "/index.html" %}
+    {% assign page_urls = site.docs | map: "url" %}
+    {% if page_urls contains section_url %}
+      <li><a href="{{  section_url }}">{{ section.title }}</a></li>
+    {% else %}
+      <li>{{ section.title }}</li>
+    {% endif %}
+    <li class="active">{{ page.title }}</li>
+  {% endif %}
+</ol>
+{% endif %}

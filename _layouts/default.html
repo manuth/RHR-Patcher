@@ -10,19 +10,19 @@
             <div class="tagline">
                 <p>{{ site.description }}</p>
             </div>
-            {% include menubox.html %}
             <div class="main">
-                <div class="alert alert-info">
-                    <strong>Information</strong><br />
-                    Die Website befindet sich im Moment noch in der Aufbau-Phase und ist deswegen möglicherweise nicht vollständig!<br />
-                    An ihrer Fertigstellung wird zur Zeit gearbeitet.
-                </div>
+                {% include menubox.html %}
                 <article class="markdown-body">
+                    <div class="alert alert-info">
+                        <strong>Information</strong><br />
+                        Die Website befindet sich im Moment noch in der Aufbau-Phase und ist deswegen möglicherweise nicht vollständig!<br />
+                        An ihrer Fertigstellung wird zur Zeit gearbeitet.
+                    </div>
                     {{ content }}
                     <div style="clear: both; "></div>
                 </article>
+                {% include footer.html %}
             </div>
-            {% include footer.html %}
         </div>
         <footer class="wrapper credits">
             <small>
