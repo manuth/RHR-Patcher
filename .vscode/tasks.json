@@ -2,21 +2,24 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "0.1.0",
-    "command": "cmd",
-    "args": ["/C"],
-    "tasks":
-    [
+    "command": "grunt",
+    "isShellCommand": true,
+    "tasks": [
         {
-            "taskName": "Build",
-            "suppressTaskName": true,
+            "taskName": "dist",
+            "args": [],
             "isBuildCommand": true,
-            "args": [ "cd source && grunt dist" ]
+            "isWatching": false,
+            "problemMatcher": [
+                "$lessCompile",
+                "$tsc",
+                "$jshint"
+            ]
         },
         {
-            "taskName": "Serve",
-            "suppressTaskName": true,
-            "isWatching": true,
-            "args": [ "bundle exec jekyll serve --config _config.local.yml --watch" ]
+            "taskName": "test",
+            "args": [],
+            "isTestCommand": true
         }
     ]
 }
