@@ -25,7 +25,6 @@ premalink:      pretty
 
 # Server
 source:         source
-destination:    site
 host:           0.0.0.0
 url:            http://localhost:4000/
 encoding:       UTF-8
