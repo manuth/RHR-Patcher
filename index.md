@@ -2,7 +2,7 @@
 title: RHR-Patcher
 ---
 {% include base.html %}
-<div class="rhrpatcher-banner"><img src="{{ page.base }}/assets/images/Banner.Image.png" /></div>
+<div class="rhrpatcher-banner"><img src="{{ base }}/assets/images/Banner.Image.png" /></div>
 
 # {{ page.title }}
 
