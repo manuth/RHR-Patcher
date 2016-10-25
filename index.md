@@ -8,7 +8,7 @@ title: RHR-Patcher
 
 Heyho, Leute :smiley:
 
-Willkommen auf der Seite des RHR-Patchers! :tada::tada::tada:
+Willkommen auf der Seite des RHR-Patchers! :tada::tada::tada:  
 Hierbei handelt es sich um einen Patcher, welcher dazu im Stande ist, Patches in drei verschiedenen Formaten anzuwenden und/oder zu erstellen.  
 Auf dieser Seite findet ihr Downloads, Dokumente, Hilfestellungen und Anleitungen zur optimalen Nutzung des RHR-Patchers.
 

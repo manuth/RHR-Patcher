@@ -4,3 +4,8 @@
     docs:
         - About
         - Manual
+-
+    title:  Entwickler-Dokuemnte
+    path:   DevDocs
+    docs:
+        - Patches

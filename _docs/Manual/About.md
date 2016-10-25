@@ -30,5 +30,5 @@ eine ASPX-Seite erstellen, welche auf die [ProjectDatabase] zugreift.
 Das Projekt _Patches_ (Name noch nicht festgelegt) beihnaltet übersichtliche Klassen und interfaces,
 welche dazu dienen, dass man einen eigenen Patcher schreiben oder ein eigenes Patch-Format erstellen kann.
 
-<!--- References --->
+<!--- References -->
 [ProjectDatabase]: https://rhrpatcher.romresources.net/?Home
