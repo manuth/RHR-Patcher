@@ -1,7 +1,7 @@
 ---
 title: Konfigurationsanleitung
 ---
-
+{% include base.html %}
 Der RHR-Patcher ist umfangreich konfigurierbar. So lässt er beispielsweise Backups, Aufgabenplanung und FTP-Upload zu.  
 Im Folgenden werden die Optionen beschrieben.
 
