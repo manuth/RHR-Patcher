@@ -96,7 +96,7 @@ Klickt als erstes auf "Patch Anwenden", um das Patch-Anwendungs-Menü aufzurufen
     <div class="thumbnail">
         <img src="{{ base }}/assets/images/Manual/Manual/PatchApplicationMenu.png" />
         <div class="caption">
-            <h3>Abbildung 2: Das Patch-Anwendungs-Menü</h3>
+            <h3>Abbildung 3: Das Patch-Anwendungs-Menü</h3>
             <p>
                 So sieht das Patch-Anwendungs-Menü aus.
             </p>
@@ -110,7 +110,61 @@ welcher angwendet werden soll.
 Als letztes könnt ihr optional die Datei auswählen, in der die Ausgabe gespeichert werden soll.  
 Sollte kein Ausgabepfad angegeben sein, so wird die Original-Datei überschrieben.
 
+<div style="float: right; ">
+    <div class="thumbnail">
+        <img src="{{ base }}/assets/images/Manual/Manual/PatchApplicationFinished.png" />
+        <div class="caption">
+            <h3>Abbildung 4: Ladebildschirm</h3>
+        </div>
+    </div>
+</div>
+
+<div style="clear: both; "></div>
+
 ### Patches Erstellen
+
+<div style="float: right; ">
+    <div class="thumbnail">
+        <img src="{{ base }}/assets/images/Manual/Manual/PatchCreation.png" />
+        <div class="caption">
+            <h3>Abbildung 5: Das Hauptmenü</h3>
+            <p>
+                So öffnet man das Patch-Erstellungs-Menü
+            </p>
+        </div>
+    </div>
+</div>
+
+Öffnet zunächst das Patch-Erstellungs-Menü durch einen Klick auf "Patch Erstellen".
+
+#### Das Patch-Erstellungs-Menü
+
+<div style="float: left; ">
+    <div class="thumbnail">
+        <img src="{{ base }}/assets/images/Manual/Manual/PatchCreationMenu.png" />
+        <div class="caption">
+            <h3>Abbildung 6: Das Patch-Erstellungs-Menü</h3>
+        </div>
+    </div>
+</div>
+<div style="clear: both; "></div>
+
+In dem darauf folgenden Menü habt ihr die Möglichkeit, auszuwählen, nach welchem Patch-System der Patch erstellt werden soll.  
+Unter "Speicherort des Patches" wählt ihr den Speicherort aus, an welchem der Patch abgelegt werden soll.  
+Legt unter "Original-Datei" fest, welche Datei eure Basis für das Projekt ist.  
+Als letztes wählt ihr nun unter "Modifikation" eure bearbeitete Datei aus und bestätigt die Auswahl mit "Start".
+
+Innert kürzester Zeit ist der Patch erstellt.  
+
+<div style="float: right; ">
+    <div class="thumbnail">
+        <img src="{{ base }}/assets/images/Manual/Manual/PatchCreationFinished.png" />
+        <div class="caption">
+            <h3>Abbildung 6: Ladebildschirm</h3>
+        </div>
+    </div>
+</div>
+
 
 <!--- References -->
 [ProjectDatabase]:                  https://rhrpatcher.romresources.net/?Home
