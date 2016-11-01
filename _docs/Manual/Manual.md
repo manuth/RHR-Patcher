@@ -35,8 +35,8 @@ welche nach Belieben angepasst wurden. Ein gutes Beispiel hierfür ist [Pokémon
 
 Würde, als Beispiel, der Autor, [Dragonfly], nun den ROM-Hack so, wie er nun ist, einfach hochladen,
 würde er in einen rechtlichen Konflikt mit GameFreak kommen,
-da das bearbeitete Spiel dennoch sehr viele Bestandteile des Original-Spiels
-wie bspw. die gesamte Funktionsweise des Spiels beinhaltet, welche ein grosses Stück des Spiels darstellt.
+da das bearbeitete Spiel dennoch sehr viele Bestandteile des Originals
+wie bspw. die gesamte Funktionsweise, beinhaltet, welche ein grosses Stück des Spiels darstellt.
 
 An dieser Stelle kommen _Patches_ ins Spiel.  
 Patches sind Dateien, welche Informationen darüber beinhalten, was an einer Datei geändert wurde.  
@@ -58,10 +58,6 @@ Hallo, Welt!
 
 In dem Patch würde dann nur stehen, dass an der Position 78 in der neuen Datei "Welt" steht.  
 Von dem urheberrechtlich geschützten Inhalt würde dann jedoch nichts mehr zu sehen sein.
-
-Die Patches können dann also ohne weiteres im Internet geteilt werden.  
-Derjenige, der den Patch downloadet braucht dann also lediglich die originale Datei zu besitzen,
-den Patch darauf anzuwenden und hat dann als Resultat die neue Datei.
 
 Wenn nun also Dragonfly einen Patch von [Pokémon - Sovereign of the Skies] macht,
 steht im Patch lediglich drin, was er an der Pokémon Smaragd-Edition verändert hat.  

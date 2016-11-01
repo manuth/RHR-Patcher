@@ -74,7 +74,19 @@
     <Content Include="assets\css\markdown.css" />
     <Content Include="assets\css\styles.css" />
     <Content Include="assets\images\Background.png" />
+    <Content Include="assets\images\Banner.BackgroundImage.png" />
+    <Content Include="assets\images\Banner.Image.png" />
     <Content Include="assets\images\code.png" />
+    <Content Include="assets\images\Manual\Config\Backup.png" />
+    <Content Include="assets\images\Manual\Config\FTPUpload.png" />
+    <Content Include="assets\images\Manual\Config\General.png" />
+    <Content Include="assets\images\Manual\Manual\MainMenu.png" />
+    <Content Include="assets\images\Manual\Manual\PatchApplication.png" />
+    <Content Include="assets\images\Manual\Manual\PatchApplicationFinished.png" />
+    <Content Include="assets\images\Manual\Manual\PatchApplicationMenu.png" />
+    <Content Include="assets\images\Manual\Manual\PatchCreation.png" />
+    <Content Include="assets\images\Manual\Manual\PatchCreationFinished.png" />
+    <Content Include="assets\images\Manual\Manual\PatchCreationMenu.png" />
     <Content Include="assets\images\pattern.png" />
     <Content Include="assets\images\tar.png" />
     <Content Include="assets\images\zip.png" />
@@ -222,6 +234,12 @@
     <Content Include="less\utilities.less" />
     <Content Include="less\variables.less" />
     <Content Include="less\wells.less" />
+    <Content Include="assets\images\Manual\Config\Backup.xcf" />
+    <Content Include="assets\images\Manual\Manual\PatchApplication.xcf" />
+    <Content Include="assets\images\Manual\Manual\PatchApplicationMenu.xcf" />
+    <Content Include="assets\images\Manual\Manual\PatchCreation.xcf" />
+    <Content Include="assets\images\Manual\Manual\PatchCreationMenu.xcf" />
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -230,6 +248,12 @@
     </None>
     <Content Include="_config.local.yml" />
     <Content Include="_config.yml" />
+    <Content Include="_data\docs.yml" />
+    <Content Include="_docs\DevDocs\Patches.md" />
+    <Content Include="_docs\index.md" />
+    <Content Include="_docs\Manual\About.md" />
+    <Content Include="_docs\Manual\Config.md" />
+    <Content Include="_docs\Manual\Manual.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
