@@ -61,11 +61,27 @@ defaults:
 
 # Exclutions
 exclude:
-    - node_modules
+    - .vs
+    - .vscode
+    - _site
+    - AsyncExec.dll
+    - CHANGELOG.md
+    - bin
     - fonts
+    - Gemfile
+    - Gemfile.lock
     - grunt
+    - Gruntfile.js
     - js
     - less
-    - Gruntfile.js
+    - LICENSE
+    - node_modules
+    - obj
     - package.json
+    - Properties
+    - README.md
+    - '*.csproj'
+    - '*.csproj.user'
+    - '*.sln'
     - '*.xcf'
+    - '*.config'

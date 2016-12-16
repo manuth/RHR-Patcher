@@ -45,6 +45,7 @@ Genau darauf ist es aufgelegt: Simpel aufgebaut, schnell, übersichtlich und lei
 | Header                |                 5 | Die Magic-Bytes `PATCH`                                                                                                                               |
 | Records               | Beliebig          | Blöcke, in denen Informationen zu sich geänderten Daten beinhaltet. Hierbei kann es sich wahlweise um einen normalen oder einen RLE-Block handeln.    |
 | EndOfFile-Indicator   |                 3 | Die Bytes, welche das Ende der Datei markieren: `EOF`                                                                                                 |
+| Output-Size           |          0 oder 3 | Falls die Modifikation eine andere Grösse als das Original hat, wird diese nach den EOF-Indikator geschrieben                                         |
 
 #### Normaler Block
 
