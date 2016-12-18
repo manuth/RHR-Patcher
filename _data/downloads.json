@@ -1,0 +1,22 @@
+[
+    {
+        "name": "v0.4",
+        "downloads": [
+            {
+                "name": "RHR-Patcher",
+                "filename": "RHR-Patcher.zip",
+                "url": "https://github.com/manuth/RHR-Patcher/releases/download/v0.4/RHR-Patcher.zip"
+            },
+            {
+                "name": "Konsolen-Version",
+                "filename": "RHR-Patcher.Console-Version.zip",
+                "url": "https://github.com/manuth/RHR-Patcher/releases/download/v0.4/RHR-Patcher.Console-Version.zip"
+            },
+            {
+                "name": "C#-Libraries",
+                "filename": "RHR-Patcher.Libraries.zip",
+                "url": "https://github.com/manuth/RHR-Patcher/releases/download/v0.4/RHR-Patcher.Libraries.zip"
+            }
+        ]
+    }
+]

@@ -132,10 +132,12 @@
     <Content Include="_includes\anchor_links.html" />
     <Content Include="_includes\base.html" />
     <Content Include="_includes\bottom.html" />
+    <Content Include="_includes\breadcrumb.html" />
     <Content Include="_includes\build-time.html" />
     <Content Include="_includes\footer.html" />
     <Content Include="_includes\header.html" />
     <Content Include="_includes\menubox.html" />
+    <Content Include="_includes\pagination.html" />
     <Content Include="_includes\top.html" />
     <Content Include="_layouts\default.html" />
     <Content Include="assets\css\functions.less" />
@@ -240,6 +242,7 @@
     <Content Include="assets\images\Manual\Manual\PatchCreation.xcf" />
     <Content Include="assets\images\Manual\Manual\PatchCreationMenu.xcf" />
     <Content Include="package.json" />
+    <Content Include="downloads\index.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -248,12 +251,13 @@
     </None>
     <Content Include="_config.local.yml" />
     <Content Include="_config.yml" />
-    <Content Include="_data\docs.yml" />
+    <None Include="_data\docs.json" />
     <Content Include="_docs\DevDocs\Patches.md" />
     <Content Include="_docs\index.md" />
     <Content Include="_docs\Manual\About.md" />
     <Content Include="_docs\Manual\Config.md" />
     <Content Include="_docs\Manual\Manual.md" />
+    <None Include="_data\downloads.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />

@@ -139,23 +139,23 @@ Diese Codierungs-Methode wird in diesem Patching-System vielfach verwendet und w
 
 ### Datei-Struktur
 
-| Name              | Länge (in Bytes)  | Beschreibung                                                      |
-|-------------------|------------------:|-------------------------------------------------------------------|
-| Header            |                 4 | Die Magic-Bytes `UPS1`                                            |
-| Original-size     |          variabel | Die Grösse der originalen Datei; VLE-Codiert                      |
-| Modified-size     |          variabel | Die Grösse der bearbeiteten Datei; VLE-Codiert                    |
-| Records           |          variabel | Die Blöcke, welche Informationen zu geänderten Daten beinhalten   |
-| Original-Checksum |                 4 | Der CRC32-Hash der originalen Datei                               |
-| Modified-Checksum |                 4 | Der CRC32-Hash der bearbeiteten Datei                             |
-| Patch-Checksum    |                 4 | Der CRC32-Hash der Patch-Datei abgesehen von den letzten 4 Bytes  |
+| Name              | Länge (in Bytes)  | Beschreibung                                                                      |
+|-------------------|------------------:|-----------------------------------------------------------------------------------|
+| Header            |                 4 | Die Magic-Bytes `UPS1`                                                           |
+| Original-size     |          variabel | Die Grösse der originalen Datei; VLE-Codiert                                      |
+| Modified-size     |          variabel | Die Grösse der bearbeiteten Datei; VLE-Codiert                                    |
+| Records           |          variabel | Die Blöcke, welche Informationen zu geänderten Daten beinhalten                   |
+| Original-Checksum |                 4 | Der CRC32-Hash der originalen Datei                                               |
+| Modified-Checksum |                 4 | Der CRC32-Hash der bearbeiteten Datei                                             |
+| Patch-Checksum    |                 4 | Der CRC32-Hash der Patch-Datei abgesehen von den letzten 4 Bytes                  |
 
 #### Die Blöcke
 
-| Name                  | Länge (in Bytes)  | Beschreibung                                                  |
-|-----------------------|------------------:|---------------------------------------------------------------|
-| Relative Difference   |          variabel | Der Abstand zum letzten Block ***oder*** zum Anfang der Datei |
-| Data                  |          variabel | originale Datei XOR bearbeitete Datei                         |
-| EndOfBlock Indicator  |                 1 | Abschliessendes `0x00`                                        |
+| Name                  | Länge (in Bytes)  | Beschreibung                                                                  |
+|-----------------------|------------------:|-------------------------------------------------------------------------------|
+| Relative Difference   |          variabel | Der Abstand zum letzten Block ***oder*** zum Anfang der Datei; VLE-Codiert    |
+| Data                  |          variabel | originale Datei XOR bearbeitete Datei                                         |
+| EndOfBlock Indicator  |                 1 | Abschliessendes `0x00`                                                       |
 
 ## RomHackersResources Patching-System
 

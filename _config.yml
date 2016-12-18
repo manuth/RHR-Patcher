@@ -25,7 +25,7 @@ premalink:      pretty
 
 # Server
 host:           0.0.0.0
-url:            http://manuth.github.io/RHR-Patcher/
+url:            http://manuth.github.io/RHR-Patcher
 encoding:       UTF-8
 
 # Collections
