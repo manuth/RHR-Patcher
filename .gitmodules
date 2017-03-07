@@ -1,0 +1,3 @@
+[submodule "ProjectDBClient"]
+	path = ProjectDBClient
+	url = https://github.com/manuth/ProjectDBClient.git

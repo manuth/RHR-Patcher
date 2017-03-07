@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RHR-Patcher", "RHR-Patcher\RHR-Patcher.csproj", "{9BE4F143-8CFA-4D51-86C6-14561C4003C6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectDBClient", "ProjectDBClient", "{E8A7A571-5847-4AEE-9953-EDAF7023C567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectDBClient", "ProjectDBClient\ProjectDBClient\ProjectDBClient.csproj", "{7C7F4EB3-DAFD-4F78-94E4-8A22366F71C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{9BE4F143-8CFA-4D51-86C6-14561C4003C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BE4F143-8CFA-4D51-86C6-14561C4003C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BE4F143-8CFA-4D51-86C6-14561C4003C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C7F4EB3-DAFD-4F78-94E4-8A22366F71C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C7F4EB3-DAFD-4F78-94E4-8A22366F71C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C7F4EB3-DAFD-4F78-94E4-8A22366F71C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C7F4EB3-DAFD-4F78-94E4-8A22366F71C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C7F4EB3-DAFD-4F78-94E4-8A22366F71C8} = {E8A7A571-5847-4AEE-9953-EDAF7023C567}
 	EndGlobalSection
 EndGlobal
