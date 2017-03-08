@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
 [assembly: AssemblyTitle("RHR-Patcher")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A multi-fileformat-patcher.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("manuth")]
 [assembly: AssemblyProduct("RHR-Patcher")]
