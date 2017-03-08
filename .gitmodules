@@ -1,3 +1,6 @@
 [submodule "ProjectDBClient"]
 	path = ProjectDBClient
 	url = https://github.com/manuth/ProjectDBClient.git
+[submodule "Patchization"]
+	path = Patchization
+	url = https://github.com/manuth/Patchization.git
