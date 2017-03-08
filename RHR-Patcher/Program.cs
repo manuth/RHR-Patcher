@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RHR_Patcher
+namespace manuth.RHRPatcher
 {
     static class Program
     {
