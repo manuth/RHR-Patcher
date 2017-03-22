@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patchization", "Patchizatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "Patchization\UnitTests\UnitTests.csproj", "{D9923D50-6F9D-4747-BC05-7A51E15403BA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskEngine", "TaskEngine", "{D97D5867-8C0D-47A6-B429-19C03B679675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskEngine", "Patchization\TaskEngine\TaskEngine\TaskEngine.csproj", "{FCF87187-E5BC-461D-8D3E-EF9AD4B55599}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{D9923D50-6F9D-4747-BC05-7A51E15403BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9923D50-6F9D-4747-BC05-7A51E15403BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9923D50-6F9D-4747-BC05-7A51E15403BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF87187-E5BC-461D-8D3E-EF9AD4B55599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF87187-E5BC-461D-8D3E-EF9AD4B55599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF87187-E5BC-461D-8D3E-EF9AD4B55599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF87187-E5BC-461D-8D3E-EF9AD4B55599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +60,6 @@ Global
 		{29F135CE-D7F3-4A7C-9A07-99DB3A7DF83A} = {E8A7A571-5847-4AEE-9953-EDAF7023C567}
 		{E067AB4F-A2FE-4F0A-B4C7-53F8843D05A1} = {F892298F-FACB-456A-9291-09EB40533D19}
 		{D9923D50-6F9D-4747-BC05-7A51E15403BA} = {F892298F-FACB-456A-9291-09EB40533D19}
+		{FCF87187-E5BC-461D-8D3E-EF9AD4B55599} = {D97D5867-8C0D-47A6-B429-19C03B679675}
 	EndGlobalSection
 EndGlobal
