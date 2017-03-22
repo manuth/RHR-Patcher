@@ -7,7 +7,7 @@
     <ProjectGuid>{9BE4F143-8CFA-4D51-86C6-14561C4003C6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>manuth.RHRPatcher</RootNamespace>
+    <RootNamespace>ManuTh.RHRPatcher</RootNamespace>
     <AssemblyName>RHR-Patcher</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -4,19 +4,23 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace manuth.RHRPatcher
+namespace ManuTh.RHRPatcher
 {
-    static class Program
+    /// <summary>
+    /// The RHR-Patcher.
+    /// </summary>
+    internal static class Program
     {
         /// <summary>
         /// Der Haupteinstiegspunkt für die Anwendung.
         /// </summary>
         [STAThread]
-        static void Main()
+        internal static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
+
+            // Application.Run(new Form1());
         }
     }
 }
