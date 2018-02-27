@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C7F4EB3-DAFD-4F78-94E4-8A22366F71C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManuTh.ProjectDBClient</RootNamespace>
+    <AssemblyName>ProjectDBClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessRequest{T}.cs" />
+    <Compile Include="APIConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="APIConnection.Designer.cs">
+      <DependentUpon>APIConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APIError.cs" />
+    <Compile Include="APIObject.cs" />
+    <Compile Include="APIRequest{T}.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="CreationRequest{T}.cs" />
+    <Compile Include="DeletionRequest{T}.cs" />
+    <Compile Include="IAPIObject.cs" />
+    <Compile Include="IIdentifiableObject.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransferRequest{T}.cs" />
+    <Compile Include="TransferRequest{TInput, TOutput}.cs" />
+    <Compile Include="Translation.cs" />
+    <Compile Include="TranslationCollection.cs" />
+    <Compile Include="TranslationState.cs" />
+    <Compile Include="UpdateRequest{T}.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Version.cs" />
+    <Compile Include="VersionCollection.cs" />
+    <Compile Include="VersionType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaskEngine\TaskEngine\TaskEngine.csproj">
+      <Project>{FCF87187-E5BC-461D-8D3E-EF9AD4B55599}</Project>
+      <Name>TaskEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
