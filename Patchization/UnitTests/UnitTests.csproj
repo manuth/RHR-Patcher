@@ -53,10 +53,6 @@
       <Project>{E067AB4F-A2FE-4F0A-B4C7-53F8843D05A1}</Project>
       <Name>Patchization</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TaskEngine\TaskEngine\TaskEngine.csproj">
-      <Project>{FCF87187-E5BC-461D-8D3E-EF9AD4B55599}</Project>
-      <Name>TaskEngine</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

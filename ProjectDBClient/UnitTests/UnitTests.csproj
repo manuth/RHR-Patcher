@@ -54,10 +54,6 @@
       <Project>{7C7F4EB3-DAFD-4F78-94E4-8A22366F71C8}</Project>
       <Name>ProjectDBClient</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TaskEngine\TaskEngine\TaskEngine.csproj">
-      <Project>{FCF87187-E5BC-461D-8D3E-EF9AD4B55599}</Project>
-      <Name>TaskEngine</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

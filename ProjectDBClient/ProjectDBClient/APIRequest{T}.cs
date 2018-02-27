@@ -9,7 +9,6 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using ManuTh.Tasks;
 
 namespace ManuTh.ProjectDBClient
 {
@@ -85,7 +84,7 @@ namespace ManuTh.ProjectDBClient
         /// <returns>The result of the request.</returns>
         public T Start()
         {
-            return StartAsync().RunSync();
+            return StartAsync().GetAwaiter().GetResult();
         }
 
         /// <summary>
@@ -110,7 +109,7 @@ namespace ManuTh.ProjectDBClient
         /// <returns>The result of the request.</returns>
         protected virtual T Execute(HttpWebRequest request)
         {
-            return ExecuteAsync(request).RunSync();
+            return ExecuteAsync(request).GetAwaiter().GetResult();
         }
 
         /// <summary>

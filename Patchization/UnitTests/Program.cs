@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ManuTh.Patchization;
-using ManuTh.Tasks;
 
 namespace ManuTh.Patchization.UnitTests
 {

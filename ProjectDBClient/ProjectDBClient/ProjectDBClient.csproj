@@ -74,12 +74,6 @@
     <Compile Include="VersionCollection.cs" />
     <Compile Include="VersionType.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TaskEngine\TaskEngine\TaskEngine.csproj">
-      <Project>{FCF87187-E5BC-461D-8D3E-EF9AD4B55599}</Project>
-      <Name>TaskEngine</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

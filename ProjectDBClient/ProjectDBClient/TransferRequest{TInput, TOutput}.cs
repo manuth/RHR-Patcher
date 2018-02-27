@@ -7,7 +7,6 @@ using System.Net.Http;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
-using ManuTh.Tasks;
 
 namespace ManuTh.ProjectDBClient
 {
@@ -35,7 +34,7 @@ namespace ManuTh.ProjectDBClient
         /// <returns>The result of the request.</returns>
         protected override TOutput Execute(HttpWebRequest request)
         {
-            return ExecuteAsync(request).RunSync();
+            return ExecuteAsync(request).GetAwaiter().GetResult();
         }
 
         /// <summary>
